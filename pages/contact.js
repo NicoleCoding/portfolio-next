@@ -1,5 +1,5 @@
 import { PiEnvelope } from "react-icons/pi";
-import ContactForm from "../components/ContactForm";
+import Form from "../components/Form";
 
 export default function Contact() {
     return (
@@ -11,7 +11,7 @@ export default function Contact() {
             <p className="p-4">If you have any questions or are interested in collaboration, you can contact me through the below contact form.
                 I will respond to your message within 24 hours.
             </p>
-            <ContactForm></ContactForm>
+            <Form></Form>
         </section>
 
     );
