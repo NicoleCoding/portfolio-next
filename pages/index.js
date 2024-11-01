@@ -16,8 +16,10 @@ export default function Home() {
         <p className="mt-2 text-xs sm:text-base text-center">
         Welcome to my portfolio! I am an aspiring frontend developer with UX skills. With a solid foundation in HTML, CSS, and JavaScript, along with my UX knowledge, I create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as tech constantly evolves.
         </p>
-    <Link className="py-2 px-4 text-black hover:text-teal-500 mt-4" href="/projects">
+    <Link href="/projects">
+        <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
         <Button className="bg-teal-200 text-xs sm:text-sm" text="See my projects"></Button>
+        </div>
     </Link>
         </div>
     </section>
@@ -40,9 +42,11 @@ export default function Home() {
             <h3 className="text-2xl mb-4 mt-0">Reach out</h3>
             <p className="p-2 m-0">Interested in collaboration or got questions? Feel free to reach out!</p>
             <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I'll get back to you with potential solutions.</p>
-            <Link className="py-1 px-2 text-black hover:text-teal-500" href="/contact">
-            <Button className="bg-teal-200" text="Contact me"></Button>
-        </Link>
+            <Link href="/contact">
+                <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
+                <Button className="bg-teal-200" text="Contact me"></Button>
+                </div>
+            </Link>
         </section>
     </section>
 
