@@ -59,6 +59,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter your name"
+                required
             />
             <Input
                 type="email"
@@ -66,6 +67,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your email"
+                required
             />
             <Input
                 type="textarea"
@@ -74,6 +76,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Enter your message"
                 rows={10}
+                required
             />
             <Button className="bg-teal-200 w-11/12" type="submit" text="Submit"></Button>
             <p>{status}</p>
