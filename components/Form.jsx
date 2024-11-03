@@ -35,11 +35,11 @@ export default function ContactForm() {
                 'foXXH7JG5scM5JY-i'        
             );
 
-            if(response.status === 200) {
+            if (response.status === 200) {
                 setStatus("Message sent successfully!");
                 setFormData({ name: '', email: '', message: ''});
             }
-        } catch(error) {
+        } catch (error) {
             setStatus("An error occurred sending the message");
             console.error('EmailJS error:', error);
         }
