@@ -1,6 +1,6 @@
 export default function Input({ label, type = "text", name, value, onChange, placeholder, rows, ...props}) {
     return (
-        <div className="max-w-md mx-auto p-4">
+        <div className="w-full mx-auto p-4">
             {label && <label className="text-gray-700 text-sm font-bold max-w-md mx-auto" htmlFor={name}>{label}</label>}
             {type === "textarea" ? (
                 <textarea

@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     <div className="min-h-screen flex flex-col w-full">
     <Header />
      <main className="flex-grow pt-6 px-4 md:px-0 py-0">
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
      </main>
     <Footer />
     </div>

@@ -18,7 +18,7 @@ export default function Home() {
         </p>
     <Link href="/projects">
         <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
-        <Button className="bg-teal-200 text-xs sm:text-sm" text="See my projects"></Button>
+        <Button className="bg-teal-200 text-xs sm:text-sm p-4 rounded-lg" text="See my projects"></Button>
         </div>
     </Link>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
             <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I'll get back to you with potential solutions.</p>
             <Link href="/contact">
                 <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
-                <Button className="bg-teal-200" text="Contact me"></Button>
+                <Button className="bg-teal-200 p-4 rounded-lg" text="Contact me"></Button>
                 </div>
             </Link>
         </section>
@@ -52,5 +52,5 @@ export default function Home() {
 
 
 </section>
-  );
+  )
 }

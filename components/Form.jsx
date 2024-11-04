@@ -47,7 +47,7 @@ export default function ContactForm() {
 
     return (
         <motion.form
-            className="bg-contact-form-background bg-no-repeat bg-cover max-w-md mx-auto p-10 rounded-lg"
+            className="flex flex-col items-center bg-contact-form-background bg-no-repeat bg-cover max-w-md mx-auto p-10 rounded-lg"
             onSubmit={handleSubmit}
             initial={{ opacity: 0, x: -20 }} 
             animate={{ opacity: 1, x: 0 }} 
@@ -78,8 +78,8 @@ export default function ContactForm() {
                 rows={10}
                 required
             />
-            <Button className="bg-teal-200 w-11/12" type="submit" text="Submit"></Button>
-            <p>{status}</p>
+            <Button className="bg-teal-200 w-11/12 p-2 rounded" type="submit" text="Submit"></Button>
+            <p>{status}</p> 
         </motion.form>
     );
 }
