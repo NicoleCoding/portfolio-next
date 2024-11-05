@@ -1,4 +1,4 @@
-import ProjectCarousel from "../components/ProjectCarousel";
+import ProjectDisplay from "../../components/ProjectDisplay";
 import { LuRocket } from "react-icons/lu";
 
 export default function Projects() {
@@ -14,7 +14,7 @@ export default function Projects() {
             <section className="p-4">
                 <p>Explore my projects here. Both personal and academic projects are included. This collection will be updated on a regular basis.</p>
             </section>
-            <ProjectCarousel />
+            <ProjectDisplay />
         </section>
         
 
