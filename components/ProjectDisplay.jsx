@@ -6,7 +6,7 @@ export default function ProjectDisplay() {
     const projects = [
         {  id: "1",
            title: "Hotel booking application - Palm Booking Agency",
-           projectImage: "/prototype-hotel-app.jpg",
+           projectImage: "/hotel-app.png",
         },
         {  id: "2",
            title: "Informative application about climate change - KlimatKoll",
