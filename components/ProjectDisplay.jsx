@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Button from './Button'; 
+import Image from 'next/image';
 
 export default function ProjectDisplay() {
     const projects = [
@@ -27,7 +28,7 @@ export default function ProjectDisplay() {
         <div className="flex flex-wrap justify-center gap-6">
             {projects.map((project) => (
                 <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                    <img 
+                    <Image 
                         src={project.projectImage} 
                         alt={project.title} 
                         className="mx-auto p-2 w-full"

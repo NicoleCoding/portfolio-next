@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "../../components/Button"; 
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const projectData = {
     "1": {
@@ -48,7 +49,7 @@ export default function Project() {
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center">
                 <section className="w-full md:w-6/12 p-2 md:mr-6">
-                    <img 
+                    <Image 
                         src={project.projectImage} 
                         alt={project.title} 
                         className="w-full rounded-lg shadow-lg"

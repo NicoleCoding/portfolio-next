@@ -39,7 +39,7 @@ export default function Home() {
         <section className="shadow-lg p-6 mx-auto lg:mx-0 rounded-lg w-80 text-center flex flex-col justify-start">
             <h3 className="text-2xl mb-4 mt-0">Reach out</h3>
             <p className="p-2 m-0">Interested in collaboration or got questions? Feel free to reach out!</p>
-            <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I'll get back to you with potential solutions.</p>
+            <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I&lsquo;ll get back to you with potential solutions.</p>
             <Link href="/contact">
                 <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="Contact me"></Button>
             </Link>
