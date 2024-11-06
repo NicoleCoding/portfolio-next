@@ -25,7 +25,7 @@ export default function ProjectDisplay() {
     }
 
     return (
-        <div className="flex flex-end justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
             {projects.map((project) => (
                 <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col justify-between">
                     <Image 
