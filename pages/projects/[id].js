@@ -42,8 +42,8 @@ export default function Project() {
     return (
         <div className="p-5 font-custom">
             <div className="flex justify-start items-center">
-                <Link href="/projects" className="py-1 px-2 text-black hover:text-teal-500">
-                    <Button text="Go back to projects" className="bg-teal-200 p-3 rounded-lg" />
+                <Link href="/projects" className="py-1 px-2">
+                    <Button text="Go back to projects" className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" />
                 </Link>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center">
@@ -64,10 +64,10 @@ export default function Project() {
                                 rel="noopener noreferrer" 
                                 className="py-1 px-2 text-black hover:text-teal-500"
                             >
-                                <Button className="bg-teal-200 p-3 rounded-lg" text="View Live Version" />
+                            <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="View Live Version" />
                             </a>
                         ) : (
-                                <Button className="bg-gray-400" text="Live Version coming soon" disabled />
+                            <Button className="bg-gray-400 p-4 rounded-lg mt-4 py-2 px-4" text="Live Version coming soon" disabled />
                         )}
                         <a 
                             href={project.codeLink} 
@@ -75,7 +75,7 @@ export default function Project() {
                             rel="noopener noreferrer" 
                             className="py-1 px-2 text-black hover:text-teal-500"
                         >
-                            <Button text="View code" className="bg-teal-200 p-3 rounded-lg" />
+                            <Button text="View code" className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" />
                         </a>
                     </div>
                 </section>

@@ -17,9 +17,7 @@ export default function Home() {
         Welcome to my portfolio! I am an aspiring frontend developer with UX skills. With a solid foundation in HTML, CSS, and JavaScript, along with my UX knowledge, I create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as tech constantly evolves.
         </p>
     <Link href="/projects">
-        <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
-        <Button className="bg-teal-200 text-xs sm:text-sm p-4 rounded-lg" text="See my projects"></Button>
-        </div>
+        <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="See my projects"></Button>
     </Link>
         </div>
     </section>
@@ -43,9 +41,7 @@ export default function Home() {
             <p className="p-2 m-0">Interested in collaboration or got questions? Feel free to reach out!</p>
             <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I'll get back to you with potential solutions.</p>
             <Link href="/contact">
-                <div className="py-2 px-4 text-black hover:text-teal-500 mt-4">
-                <Button className="bg-teal-200 p-4 rounded-lg" text="Contact me"></Button>
-                </div>
+                <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="Contact me"></Button>
             </Link>
         </section>
     </section>

@@ -41,7 +41,7 @@ export default function ProjectDisplay() {
                             <h3>{project.title}</h3>
                         </div>
                         <Link href={`/projects/${project.id}`}>
-                            <Button className="bg-teal-200 m-2 p-4 rounded-lg w-7/12" text="View project details" />
+                            <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="View project details" />
                         </Link>
                     </div>
                 </div>
