@@ -25,25 +25,29 @@ export default function ProjectDisplay() {
     }
 
     return (
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-end justify-center gap-6">
             {projects.map((project) => (
-                <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col justify-between">
                     <Image 
                         src={project.projectImage} 
-                        alt={project.title} 
+                        alt={project.title}
+                        width={200}
+                        height={100}
                         className="mx-auto p-2 w-full"
                         onError={(e) => {
                             console.error('Image failed to load:', project.projectImage);
                             e.target.style.display = 'none'; // Hide broken image
                         }}
                     />
-                    <div className="px-6 py-4">
+                    <div className="px-6 py-4 flex flex-col flex-grow">
                         <div className="font-bold text-xl mb-2">
                             <h3>{project.title}</h3>
                         </div>
+                        <div className="mt-auto">
                         <Link href={`/projects/${project.id}`}>
                             <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="View project details" />
                         </Link>
+                        </div>
                     </div>
                 </div>
             ))}
