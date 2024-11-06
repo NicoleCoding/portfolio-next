@@ -31,8 +31,6 @@ export default function ProjectDisplay() {
                     <Image 
                         src={project.projectImage} 
                         alt={project.title}
-                        width={200}
-                        height={100}
                         className="mx-auto p-2 w-full"
                         onError={(e) => {
                             console.error('Image failed to load:', project.projectImage);
