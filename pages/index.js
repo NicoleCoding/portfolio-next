@@ -14,7 +14,7 @@ export default function Home() {
             Creating clean, usable user interfaces with creativity and Information Architecture expertise
         </h2>
         <p className="mt-2 text-xs sm:text-base text-center">
-        Welcome to my portfolio! I am an aspiring frontend developer with UX skills. With a solid foundation in HTML, CSS, and JavaScript, along with my UX knowledge, I create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as tech constantly evolves.
+        Welcome to my portfolio! I am an aspiring full-stack developer with UX skills. With a solid foundation in HTML, CSS, and JavaScript, along with my UX knowledge, I create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as tech constantly evolves.
         </p>
     <Link href="/projects">
         <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="See my projects"></Button>
@@ -32,7 +32,7 @@ export default function Home() {
         <section className="shadow-lg p-6 mx-auto lg:mx-0 rounded-lg w-80 text-center flex flex-col justify-start">
             <h3 className="text-2xl mb-4 mt-0">UX-Design & Research</h3>
             <p className="p-2 m-0">UX design principles are used to create great user experiences, backed by research on target users. 
-                My education covers user personas, storyboards, and user stories, enabling effective UX research. I also use tools like Figma and Photoshop to prototype designs.
+                My education covered user personas, storyboards, and user stories, enabling effective UX research. For prototyping of designs, I use tools such as Figma and Photoshop.
             </p>
 
         </section>
