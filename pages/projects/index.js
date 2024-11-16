@@ -18,7 +18,7 @@ export default function Projects() {
             </section>
             <ProjectDisplay />
             <section className="p-4 flex flex-col justify-center items-center text-center sm:p-8 w-full">
-                <p className="p-2 text-white max-w-3xl"> If you're looking for a frontend developer who is passionate about creating intuitive, user-centric applications, I would love to connect. Let's talk about how I can contribute to your projects.</p>
+                <p className="p-2 text-white max-w-3xl"> If you&lsquo;re looking for a frontend developer who is passionate about creating intuitive, user-centric applications, I would love to connect. Let&lsquo;s talk about how I can contribute to your projects.</p>
             </section>
             <Link href="/contact">
             <Button
