@@ -45,7 +45,7 @@ export default function ProjectDisplay() {
                     />
                     <div className="px-6 py-4 flex flex-col flex-grow">
                         <div className="font-bold text-xl mb-2">
-                            <h3>{project.title}</h3>
+                            <h3 className="text-black">{project.title}</h3>
                         </div>
                         <div className="mt-auto">
                         <Link href={`/projects/${project.id}`}>
