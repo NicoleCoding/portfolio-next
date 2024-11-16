@@ -13,12 +13,10 @@ module.exports = {
       },
       fontFamily: {
         custom: ['Open Sans', 'sans-serif'], 
-        logo: ['DancingScript-Bold', 'cursive']
+        logo: ['Orbitron', 'sans-serif']
       },
       backgroundImage: {
-        'hero-background': "url('/Galaxy.jpeg')",
-        'skills-background': "url('/Space.jpeg')",
-        'contact-form-background': "url('/Supernova.jpeg')"
+        'main-background': "url('/Galaxy-background.jpeg')",
       },
     },
   },

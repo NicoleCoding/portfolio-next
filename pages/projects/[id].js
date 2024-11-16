@@ -44,14 +44,17 @@ export default function Project() {
         <div className="p-5 font-custom">
             <div className="flex justify-start items-center">
                 <Link href="/projects" className="py-1 px-2">
-                    <Button text="Go back to projects" className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" />
+                    <Button text="Go back to projects" className="bg-gradient-to-b from-purple-300 to-indigo-600 p-4 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600" />
                 </Link>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center">
                 <section className="w-full md:w-6/12 p-2 md:mr-6">
                     <Image 
                         src={project.projectImage} 
-                        alt={project.title} 
+                        alt={project.title}
+                        layout="responsive"
+                        width={16} // Aspect ratio width
+                        height={9}
                         className="w-full rounded-lg shadow-lg"
                         onError={(e) => {
                             e.target.style.display = 'none'; // Hide broken image
@@ -65,7 +68,7 @@ export default function Project() {
                                 rel="noopener noreferrer" 
                                 className="py-1 px-2 text-black hover:text-teal-500"
                             >
-                            <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="View Live Version" />
+                            <Button className="bg-gradient-to-b from-purple-300 to-indigo-600 p-4 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600" text="Live Version" />
                             </a>
                         ) : (
                             <Button className="bg-gray-400 p-4 rounded-lg mt-4 py-2 px-4" text="Live Version coming soon" disabled />
@@ -76,14 +79,14 @@ export default function Project() {
                             rel="noopener noreferrer" 
                             className="py-1 px-2 text-black hover:text-teal-500"
                         >
-                            <Button text="View code" className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" />
+                            <Button text="Source Code" className="bg-gradient-to-b from-purple-300 to-indigo-600 p-4 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600" />
                         </a>
                     </div>
                 </section>
                 <section className="w-full md:w-5/12 text-center md:text-left mt-4 md:mt-0">
-                    <h2 className="font-bold text-2xl text-teal-500 m-2">{project.title}</h2>
-                    <p className="text-base text-gray-600 p-2">Tech stack: {project.techStack}</p>
-                    <p className="text-base text-gray-600 p-2">{project.description}</p>
+                    <h2 className="font-bold text-2xl bg-gradient-to-b from-purple-300 to-indigo-600 bg-clip-text text-transparent m-2">{project.title}</h2>
+                    <p className="text-base text-white p-2">Tech stack: {project.techStack}</p>
+                    <p className="text-base text-white p-2">{project.description}</p>
                 </section>
             </div>
         </div>

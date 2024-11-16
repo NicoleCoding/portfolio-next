@@ -1,52 +1,84 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 import Link from "next/link";
 import Button from "@/components/Button";
+import { TiHtml5 } from "react-icons/ti";
+import { SiCsswizardry } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiStarship } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { motion } from "framer-motion";
 
 
 export default function Home() {
+  const skills = [
+    { name: "HTML5", icon: <TiHtml5 className="text-orange-500" size={50} /> },
+    { name: "CSS3", icon: <SiCsswizardry className="text-blue-500" size={50} /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" size={50} /> },
+    { name: "React.js", icon: <FaReact className="text-blue-400" size={50} /> },
+    { name: "Git", icon: <FaGitAlt className="text-red-500" size={50} /> },
+    { name: "UX Design", icon: <MdOutlineDesignServices className="text-purple-500" size={50} /> },
+    { name: "Photoshop", icon: <SiAdobephotoshop className="text-blue-600" size={50} /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-black" size={50} /> },
+    { name: "Tailwind.css", icon: <SiTailwindcss className="text-sky-400" size={50} /> },
+  ];
+
+
   return (
-    <section className="container mx-auto p-4 md:p-8 max-w-screen-4xl font-custom">
-    <section id="hero" className="p-0 sm:p-2 relative flex flex-col md:flex-col justify-between items-center bg-hero-background bg-no-repeat bg-cover text-white rounded-lg h-25 bg-center aspect-square sm:aspect-auto overflow-hidden">
-        <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-        <div className="relative z-10 text-white px-4 py-6 flex flex-col items-center justify-center h-full">
-        <h2 className="font-bold text-lg sm:text-2xl text-teal-500 text-center">
-            Creating clean, usable user interfaces with creativity and Information Architecture expertise
-        </h2>
-        <p className="mt-2 text-xs sm:text-base text-center">
-        Welcome to my portfolio! I am an aspiring full-stack developer with UX skills. With a solid foundation in HTML, CSS, and JavaScript, along with my UX knowledge, I create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as tech constantly evolves.
-        </p>
-    <Link href="/projects">
-        <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="See my projects"></Button>
-    </Link>
+    <section className=" w-screen flex flex-col items-center justify-center font-custom p-2">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeIn" }}
+      >
+        <SiStarship className="text-white" size={40} />
+      </motion.div>
+
+      <section
+        id="hero"
+        className="flex flex-col justify-center items-center text-center p-4 sm:p-8 w-full max-w-3xl"
+      >
+        <div className="relative z-10 text-white px-4 py-6 flex flex-col items-center">
+          <h2 className="font-bold text-lg sm:text-5xl">
+            Frontend Developer | UX
+          </h2>
+          <p className="mt-2 text-xs sm:text-base">
+            Hi! My name is Nicole. I am a frontend developer with UX skills.
+            With a solid foundation in HTML, CSS, and JavaScript, along with UX
+            knowledge, I aim to create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as the tech universe constantly evolves.
+          </p>
+          <Link href="/about">
+            <Button
+              className="bg-gradient-to-b from-purple-300 to-indigo-600 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600"
+              text="Learn More About Me"
+            ></Button>
+          </Link>
         </div>
+      </section>
+      <section
+        id="skills"
+        className="flex flex-col items-center justify-center py-10 px-4 w-full text-white"
+      >
+        <h2 className="text-3xl font-bold mb-8">Mission Control: My Tech Stack</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col items-center space-y-2 p-4 rounded-lg transition transform hover:scale-105 border-transparent"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
+              {skill.icon}
+              <p className="text-lg font-medium">{skill.name}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </section>
-    <section id="roles" className="flex flex-col m-x p-1 lg:flex-row justify-center items-stretch gap-20">
-        <section className="shadow-lg p-6 mx-auto lg:mx-0 rounded-lg w-80 text-center flex flex-col justify-start">
-            <h3 className="text-2xl mb-4 mt-0">Frontend Development</h3>
-            <p className="p-2 m-0">With skills in HTML5, CSS3, JavaScript (ES6), and React.js, I develop frontends using tools like Git, Webpack, Vite, and npm. 
-                I ensure accessibility and usability in web interfaces and leverage APIs to create functional websites and applications. Additionally, I can build websites with WordPress.
-            </p>
-
-        </section>
-        <section className="shadow-lg p-6 mx-auto lg:mx-0 rounded-lg w-80 text-center flex flex-col justify-start">
-            <h3 className="text-2xl mb-4 mt-0">UX-Design & Research</h3>
-            <p className="p-2 m-0">UX design principles are used to create great user experiences, backed by research on target users. 
-                My education covered user personas, storyboards, and user stories, enabling effective UX research. For prototyping of designs, I use tools such as Figma and Photoshop.
-            </p>
-
-        </section>
-        <section className="shadow-lg p-6 mx-auto lg:mx-0 rounded-lg w-80 text-center flex flex-col justify-start">
-            <h3 className="text-2xl mb-4 mt-0">Reach out</h3>
-            <p className="p-2 m-0">Interested in collaboration or got questions? Feel free to reach out!</p>
-            <p className="p-2 m-0">For project inquiries, please provide a brief overview of your needs, and I&lsquo;ll get back to you with potential solutions.</p>
-            <Link href="/contact">
-                <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="Contact me"></Button>
-            </Link>
-        </section>
-    </section>
-
-
-</section>
-  )
+  );
 }

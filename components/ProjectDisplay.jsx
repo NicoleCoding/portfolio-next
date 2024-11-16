@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Button from './Button'; 
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function ProjectDisplay() {
     const projects = [
@@ -27,10 +28,15 @@ export default function ProjectDisplay() {
     return (
         <div className="flex flex-wrap justify-center gap-6">
             {projects.map((project) => (
-                <div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col justify-between">
+                <motion.div key={project.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col justify-between border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
                     <Image 
                         src={project.projectImage} 
                         alt={project.title}
+                        width={400}
+                        height={400}
                         className="mx-auto p-2 w-full"
                         onError={(e) => {
                             console.error('Image failed to load:', project.projectImage);
@@ -43,11 +49,11 @@ export default function ProjectDisplay() {
                         </div>
                         <div className="mt-auto">
                         <Link href={`/projects/${project.id}`}>
-                            <Button className="bg-teal-200 p-4 rounded-lg hover:text-teal-500 mt-4 py-2 px-4 text-black" text="View project details" />
+                            <Button className="bg-gradient-to-b from-purple-300 to-indigo-600 p-4 rounded-lg border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600 hover:text-white transition duration-400 mt-4 py-2 px-4 text-black" text="Navigate to Project" />
                         </Link>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );

@@ -47,7 +47,7 @@ export default function ContactForm() {
 
     return (
         <motion.form
-            className="flex flex-col items-center bg-contact-form-background bg-no-repeat bg-cover max-w-md mx-auto p-10 rounded-lg"
+            className="flex flex-col items-center max-w-md mx-auto p-10 rounded-lg border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 shadow-2xl shadow-indigo-500"
             onSubmit={handleSubmit}
             initial={{ opacity: 0, x: -20 }} 
             animate={{ opacity: 1, x: 0 }} 
@@ -58,7 +58,7 @@ export default function ContactForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter your name"
+                placeholder="Your name*"
                 required
             />
             <Input
@@ -66,7 +66,7 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="Your e-mail*"
                 required
             />
             <Input
@@ -74,11 +74,11 @@ export default function ContactForm() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder="Write your message here*"
                 rows={10}
                 required
             />
-            <Button className="bg-teal-200 w-11/12 p-2 rounded" type="submit" text="Submit"></Button>
+            <Button className="bg-gradient-to-b from-purple-300 to-indigo-600 w-11/12 p-2 rounded text-black hover:text-white transition duration-400 border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600" type="submit" text="Submit"></Button>
             <p>{status}</p> 
         </motion.form>
     );
