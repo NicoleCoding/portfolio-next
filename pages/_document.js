@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>NicoleCoding - Frontend Development | UX Design | Web dev</title>
+        <title>Nicole Saucinitanu - Frontend Development | UX Design | Web dev</title>
       </Head>
       <body className="antialiased">
         <Main />
