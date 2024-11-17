@@ -10,4 +10,4 @@ This is my personal portfolio website created with Next.js and Tailwind CSS. The
 - Social media: Links to relevant social media.
 
   # Live version
-  Check out the live version at: https://portfolio-next-4rzb5l92k-nicoles-projects-aea279d9.vercel.app/
+  Check out the live version at: https://nicoles-portfolio-next.vercel.app/
