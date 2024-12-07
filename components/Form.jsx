@@ -54,22 +54,25 @@ export default function ContactForm() {
             transition={{ duration: 0.4, ease: "easeIn" }} 
         >
             <Input
+                label="Name"
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Your name*"
+                placeholder="Your Name*"
                 required
             />
             <Input
+                label="E-mail"
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Your e-mail*"
+                placeholder="Your E-mail*"
                 required
             />
             <Input
+                label="Message"
                 type="textarea"
                 name="message"
                 value={formData.message}

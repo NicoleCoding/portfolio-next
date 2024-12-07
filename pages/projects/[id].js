@@ -10,7 +10,7 @@ const projectData = {
         description: "The project aimed to create a specific application for a specific use case scenario and persona. The app was specifically designed for desktop use, so it is not adjusted to mobile and smaller screens. The project was accomplished by teamwork. The application is not completed and only contains certain pages, which are relevant for the booking process.",
         projectImage: "/hotel-app.png",
         liveVersion: "https://lisawiklund.github.io/hotell-app-20244/",
-        codeLink: "https://github.com/PalmBookingAgency/HotelApp",
+        codeLink: "https://github.com/hotell-app/PalmBookingAgency.github.io",
     },
     "2": {
         title: "Informative application about climate change - KlimatKoll",

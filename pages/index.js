@@ -29,7 +29,7 @@ export default function Home() {
 
 
   return (
-    <section className=" w-screen flex flex-col items-center justify-center font-custom p-2">
+    <section className=" w-full flex flex-col items-center justify-center font-custom p-2 mx-auto">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ export default function Home() {
 
       <section
         id="hero"
-        className="flex flex-col justify-center items-center text-center p-4 sm:p-8 w-full max-w-3xl"
+        className="flex flex-col justify-center items-center mx-auto text-center p-4 sm:p-0 w-full max-w-3xl"
       >
         <div className="relative z-10 text-white px-4 py-6 flex flex-col items-center">
           <h2 className="font-bold text-lg sm:text-5xl">
