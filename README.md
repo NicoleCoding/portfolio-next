@@ -6,8 +6,8 @@ This is my personal portfolio website created with Next.js and Tailwind CSS. The
 - Project details: Each project has a page with further details.
 - Modern design: Built with Tailwind CSS, the design of the portfolio is clean and responsive.
 - Responsive layout: The portfolio is optimized for various devices and screens.
-- Call to action: A button that leads to the project showcase.
+- Call to action: The website contains several call-to-action buttons leading to various pages of the website.
 - Social media: Links to relevant social media.
 
   # Live version
-  Check out the live version at: https://portfolio-next-4rzb5l92k-nicoles-projects-aea279d9.vercel.app/
+  Check out the live version at: https://nicoles-portfolio-next.vercel.app/
