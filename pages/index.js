@@ -22,9 +22,8 @@ export default function Home() {
     { name: "React.js", icon: <FaReact className="text-blue-400" size={50} /> },
     { name: "Git", icon: <FaGitAlt className="text-red-500" size={50} /> },
     { name: "UX Design", icon: <MdOutlineDesignServices className="text-purple-500" size={50} /> },
-    { name: "Photoshop", icon: <SiAdobephotoshop className="text-blue-600" size={50} /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-black" size={50} /> },
     { name: "Tailwind.css", icon: <SiTailwindcss className="text-sky-400" size={50} /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-black" size={50} /> },
   ];
 
 

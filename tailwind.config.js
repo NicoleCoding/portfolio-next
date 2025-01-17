@@ -15,9 +15,6 @@ module.exports = {
         custom: ['Open Sans', 'sans-serif'], 
         logo: ['Orbitron', 'sans-serif']
       },
-      backgroundImage: {
-        'main-background': "url('/Galaxy-background.jpeg')",
-      },
     },
   },
   plugins: [],
