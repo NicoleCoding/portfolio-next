@@ -9,7 +9,7 @@ export default function Input({ label, type = "text", name, value, onChange, pla
                     onChange={onChange}
                     placeholder={placeholder}
                     rows={rows}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
                     {...props}
                 />
             ) : (
