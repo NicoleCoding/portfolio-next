@@ -1,12 +1,28 @@
+import React from "react";
 import Link from "next/link";
 import Button from "../../components/Button"; 
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { FaReact } from "react-icons/fa";
+import { SiReactrouter } from "react-icons/si";
+import { DiBootstrap } from "react-icons/di";
+import { FaChartSimple } from "react-icons/fa6";
+import { IoPieChartSharp } from "react-icons/io5";
+import { SiCsswizardry } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { SiAxios } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const projectData = {
     "1": {
         title: "Hotel booking application - Palm Booking Agency",
-        techStack: "React, Bootstrap, React Router, MDB React UI Kit",
+        techStack: [
+            { icon: <FaReact /> , label: "React" },
+            { icon: <SiReactrouter />, label: "React Router"},
+            { icon: <DiBootstrap /> , label: "Bootstrap"}
+        ],
         description: "The project aimed to create a specific application for a specific use case scenario and persona. The app was specifically designed for desktop use, so it is not adjusted to mobile and smaller screens. The project was accomplished by teamwork. The application is not completed and only contains certain pages, which are relevant for the booking process.",
         projectImage: "/hotel-app.png",
         liveVersion: "https://lisawiklund.github.io/hotell-app-20244/",
@@ -14,7 +30,14 @@ const projectData = {
     },
     "2": {
         title: "Informative application about climate change - KlimatKoll",
-        techStack: "React, React Router, Chart.js, Recharts",
+        techStack: [
+            { icon: <FaReact /> , label: "React" },
+            { icon: <SiReactrouter />, label: "React Router" },
+            { icon: <SiCsswizardry />, label: "CSS" },
+            { icon: <IoPieChartSharp />, label: "Recharts" },
+            { icon: <FaChartSimple />, label: "Chart.js" },
+
+        ],
         description: "The project was about creating an informative application for a specific target audience. The application contains charts and information about various topics on climate change. This was a group project within my education. The user can scroll through the application in order to explore charts and learn about climate change.",
         projectImage: "/prototype-climate-app.jpg",
         liveVersion: "https://klimatkoll.github.io/KlimatKoll-App/",
@@ -22,7 +45,15 @@ const projectData = {
     },
     "3": { 
         title: "Library App - BookVault",
-        techStack: "React, CSS, Vite, Axios, Node.js, Express.js, Mongoose, MongoDB Atlas",
+        techStack: [
+            { icon: <FaReact /> , label: "React" },
+            { icon: <SiCsswizardry />, label: "CSS"},
+            { icon: <SiVite />, label: "Vite"},
+            { icon: <SiAxios />, label: "Axios" },
+            { icon: <FaNodeJs />, label: "Node.js" },
+            { icon: <SiExpress />, label: "Express.js"},
+            { icon: <SiMongodb />, label: "MongoDB"}
+        ],
         description: "This is a full-stack web application, which allows users to search for books and also add books to their own collection. In the collection, users can toggle the read status and also remove books. The application gives users the opportunity to find books that they want to read and add them to a collection in case they want to read a specific book or specific books. The books are stored in a database in the backend.",
         projectImage: "/library-app-img.jpg",
         liveVersion: undefined,
@@ -84,9 +115,19 @@ export default function Project() {
                     </div>
                 </section>
                 <section className="w-full md:w-5/12 text-center md:text-left mt-4 md:mt-0">
-                    <h2 className="font-bold text-2xl bg-gradient-to-b from-purple-300 to-indigo-600 bg-clip-text text-transparent m-2">{project.title}</h2>
-                    <p className="text-base text-white p-2">Tech stack: {project.techStack}</p>
+                    <h2 className="font-bold text-2xl bg-gradient-to-b from-purple-300 to-indigo-600 bg-clip-text text-transparent m-2 text-center">{project.title}</h2>
                     <p className="text-base text-white p-2">{project.description}</p>
+                <section>
+                    <h2 className="font-bold text-2xl bg-gradient-to-b from-purple-300 to-indigo-600 bg-clip-text text-transparent m-2 text-center">Tech Stack</h2>
+                    <ul className="flex flex-wrap justify-center">
+                        {project.techStack.map((tech, index) => (
+                            <li key={index} className="tech-item flex items-center space-x-2 p-2">
+                                <span className="icon-container bg-gradient-to-t from-purple-300 to-indigo-600">{tech.icon}</span>
+                                <span>{tech.label}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
                 </section>
             </div>
         </div>

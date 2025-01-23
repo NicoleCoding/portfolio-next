@@ -7,7 +7,6 @@ import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { SiAdobephotoshop } from "react-icons/si";
 import { SiStarship } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";

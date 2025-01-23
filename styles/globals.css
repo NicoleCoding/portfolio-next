@@ -40,6 +40,13 @@ body {
   }
 }
 
+.icon-container {
+  border-radius: 50%; 
+  padding: 10px;
+  display: inline-block;
+
+}
+
 #root {
   margin: 0 auto;
   padding: 0;
