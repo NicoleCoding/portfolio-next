@@ -19,9 +19,9 @@ const projectData = {
     "1": {
         title: "Hotel booking application - Palm Booking Agency",
         techStack: [
-            { icon: <FaReact /> , label: "React" },
-            { icon: <SiReactrouter />, label: "React Router"},
-            { icon: <DiBootstrap /> , label: "Bootstrap"}
+            { icon: <FaReact className="text-blue-400"/> , label: "React" },
+            { icon: <SiReactrouter className="text-[#61DBFB]"/>, label: "React Router"},
+            { icon: <DiBootstrap className="text-[#563D7C]"/> , label: "Bootstrap"}
         ],
         description: "The project aimed to create a specific application for a specific use case scenario and persona. The app was specifically designed for desktop use, so it is not adjusted to mobile and smaller screens. The project was accomplished by teamwork. The application is not completed and only contains certain pages, which are relevant for the booking process.",
         projectImage: "/hotel-app.png",
@@ -31,11 +31,11 @@ const projectData = {
     "2": {
         title: "Informative application about climate change - KlimatKoll",
         techStack: [
-            { icon: <FaReact /> , label: "React" },
-            { icon: <SiReactrouter />, label: "React Router" },
-            { icon: <SiCsswizardry />, label: "CSS" },
-            { icon: <IoPieChartSharp />, label: "Recharts" },
-            { icon: <FaChartSimple />, label: "Chart.js" },
+            { icon: <FaReact className="text-blue-400"/> , label: "React" },
+            { icon: <SiReactrouter className="text-[#61DBFB]"/>, label: "React Router" },
+            { icon: <SiCsswizardry className="text-blue-500" />, label: "CSS" },
+            { icon: <IoPieChartSharp className="text-[#8884d8]"/>, label: "Recharts" },
+            { icon: <FaChartSimple className="text-[#FF6384]"/>, label: "Chart.js" },
 
         ],
         description: "The project was about creating an informative application for a specific target audience. The application contains charts and information about various topics on climate change. This was a group project within my education. The user can scroll through the application in order to explore charts and learn about climate change.",
@@ -46,13 +46,13 @@ const projectData = {
     "3": { 
         title: "Library App - BookVault",
         techStack: [
-            { icon: <FaReact /> , label: "React" },
-            { icon: <SiCsswizardry />, label: "CSS"},
-            { icon: <SiVite />, label: "Vite"},
-            { icon: <SiAxios />, label: "Axios" },
-            { icon: <FaNodeJs />, label: "Node.js" },
-            { icon: <SiExpress />, label: "Express.js"},
-            { icon: <SiMongodb />, label: "MongoDB"}
+            { icon: <FaReact className="text-blue-400" /> , label: "React" },
+            { icon: <SiCsswizardry className="text-blue-500" />, label: "CSS"},
+            { icon: <SiVite className="text-[#646CFF]"/>, label: "Vite"},
+            { icon: <SiAxios className="text-[#5A29E4]"/>, label: "Axios" },
+            { icon: <FaNodeJs className="text-[#8CC84B]"/>, label: "Node.js" },
+            { icon: <SiExpress className="text-white"/>, label: "Express.js"},
+            { icon: <SiMongodb className="text-[#4DB33D]"/>, label: "MongoDB"}
         ],
         description: "This is a full-stack web application, which allows users to search for books and also add books to their own collection. In the collection, users can toggle the read status and also remove books. The application gives users the opportunity to find books that they want to read and add them to a collection in case they want to read a specific book or specific books. The books are stored in a database in the backend.",
         projectImage: "/library-app-img.jpg",
@@ -122,7 +122,7 @@ export default function Project() {
                     <ul className="flex flex-wrap justify-center">
                         {project.techStack.map((tech, index) => (
                             <li key={index} className="tech-item flex items-center space-x-2 p-2">
-                                <span className="icon-container bg-gradient-to-t from-purple-300 to-indigo-600">{tech.icon}</span>
+                                <span className="icon-container">{tech.icon}</span>
                                 <span>{tech.label}</span>
                             </li>
                         ))}
