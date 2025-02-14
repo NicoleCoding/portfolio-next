@@ -19,10 +19,10 @@ export default function Home() {
     { name: "CSS3", icon: <SiCsswizardry className="text-blue-500" size={50} /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" size={50} /> },
     { name: "React.js", icon: <FaReact className="text-blue-400" size={50} /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-black" size={50} /> },
     { name: "Git", icon: <FaGitAlt className="text-red-500" size={50} /> },
     { name: "UX Design", icon: <MdOutlineDesignServices className="text-purple-500" size={50} /> },
     { name: "Tailwind.css", icon: <SiTailwindcss className="text-sky-400" size={50} /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-black" size={50} /> },
   ];
 
 
@@ -49,10 +49,10 @@ export default function Home() {
             With a solid foundation in HTML, CSS, and JavaScript, along with UX
             knowledge, I aim to create amazing user experiences. Always learning and keen to sharpen my expertise in various technologies as the tech universe constantly evolves.
           </p>
-          <Link href="/about">
+          <Link href="/projects">
             <Button
               className="bg-gradient-to-b from-purple-300 to-indigo-600 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600"
-              text="Learn More About Me"
+              text="Launch My Projects"
             ></Button>
           </Link>
         </div>

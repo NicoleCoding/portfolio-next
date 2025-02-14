@@ -25,10 +25,10 @@ export default function About() {
                 <p className="m-3 w-4/5 text-center leading-relaxed pb-10"> My goal is to create user experiences, that are functional and pleasant for the user. I am also working towards becoming a fullstack-developer, which will enable me to construct both the frontend and backend of projects — ensuring that every mission I embark on is complete, scalable, and impactful.</p>
                 </section>
             </section>
-            <Link href="/projects">
+            <Link href="/contact">
             <Button
               className="bg-gradient-to-b from-purple-300 to-indigo-600 rounded-lg hover:text-white transition duration-400 mt-4 py-2 px-4 text-black border-transparent border-gradient-gradient-to-b from-purple-300 to-indigo-600 hover:from-indigo-600 hover:to-purple-300 hover:shadow-2xl hover:shadow-indigo-600"
-              text="Launch my Projects"
+              text="Contact Me"
             ></Button>
             </Link>
         </section>
