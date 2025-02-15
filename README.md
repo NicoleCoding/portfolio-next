@@ -1,5 +1,5 @@
 # Overview
-This is my personal portfolio website created with Next.js and Tailwind CSS. The portfolio showcases my projects, skills and provides a presentation of myself as a web developer. I am continually updating and improving it.
+This is my personal portfolio website created with Next.js and Tailwind CSS. The portfolio showcases my projects, skills and provides a presentation of myself as a web developer. I am continuously updating and improving it.
 
 # Features
 - Project showcase: Projects are shown in a simple cardlayout.
